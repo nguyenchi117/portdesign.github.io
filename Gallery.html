@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en"> <!--This tag means that we are using english language-->
+<head>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="utf-8"> <!--This is the character set of English language--> <!--This includes AAÂA,aaaaa,1234,!@#$--> <!--We need too add few external links, they are called CDM links-->
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Styling for carasoul image-->
+
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img 
+    {
+      width: 100%;
+      height: 100%;
+    }
+    h1
+    {
+      font-family: 'DM Sans', sans-serif;
+      font-size-adjust: 130%
+      font-weight:700;
+    }
+    h2
+    {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+    }
+    h3
+    {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+    }
+    p
+    {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      line-height: 2;
+    }
+    #more {display: none;}
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding*/ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      /*margin-top: 6px; /* Add a top margin */
+      /*margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    /* Add a background color and some padding around the form */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .footer {
+     position: bottom;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #343a40;
+     color: white;
+   }
+   footer .img0 {
+    display: block;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 2px;
+    border-radius: 100%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  /* Style the input elements and the submit button */
+  input[type=text1] {
+    width: 241px;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+
+  /* Style the submit button */
+  input[type=submit1] {
+    background-color: #4CAF50;
+    color: white;
+    width: 490px;
+    padding: 12px;
+    /*margin: 8px;*/
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #4CAF50;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+  }
+
+  input[type=submit1]:hover {
+    opacity: 0.8;
+  }
+  .row1 p{
+   text-align: left;
+ }
+ .row2 {
+   text-align: center;
+   align-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: auto;
+   padding-right: auto;
+ }
+ .row3 {
+   text-align: center;
+   align-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: auto;
+   padding-right: auto;
+   width: 300px;
+ }
+  /* Style inputs with type="text3", select elements and textareas */
+    input[type=text3], select, textarea {
+      width: 100%; /* Full width */
+      /*padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      /*margin-top: 6px; /* Add a top margin */
+      /*margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit3] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+</style>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+
+</head>
+
+<!--My navbar codes starts here-->
+
+<body>
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Homepage.html">Cinuen Studio</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+
+    <li class="nav-item">
+      <a class="nav-link" href="Homepage.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About.html">About me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+
+  </ul>
+</nav>
+
+<section>
+  <br>
+  <h1 style="text-align: center;">Gallery</h1>
+  <hr class="w-100"> <!--Line-->
+  <br>
+  <br>
+  <div class="container">
+    <!-- First Row 1-->
+    <div class="row">
+      <!-- I have 3 columns with 3 respective images + text -->
+      <!--Col 1-->
+      <div class="col">
+        <img src="C:\Users\Chi Nguyen\Desktop\Web 2\images\image 3.png" width="330" height="480" style="padding-bottom: 15px">
+        <h3>Hanoi Autumn</h3>
+        <p>Characteristics of Hanoi</p>
+      </div>
+      <!--Col 2-->
+      <div class="col">
+        <img src="C:\Users\Chi Nguyen\Desktop\Web 2\images\image 4.png" width="330" height="480" style="padding-bottom: 15px">
+        <h3>Ta Hien Street</h3>
+        <p>Considered the only western quarter of the capital, Ta Hien is famous for its stalls growing close to always on the list of must-visit places in Hanoi.</p>
+      </div>
+      <!--Col 3-->
+      <div class="col">
+        <img src="C:\Users\Chi Nguyen\Desktop\Web 2\images\image 5.png" width="330" height="480" style="padding-bottom: 15px">
+        <h3>Walking Street</h3>
+        <p>Hoan Kiem Lake Walking Street is a space for walking, including 16 streets around Hoan Kiem Lake</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- I have 3 columns with 3 respective images + text -->
+      <!--Col 1-->
+      <div class="col">
+        <img src="C:\Users\Chi Nguyen\Desktop\Web 2\images\image 6.png" width="330" height="480" style="padding-bottom: 15px">
+        <h3>My beautiful girl</h3>
+        <p>Portrait Shooting</p>
+      </div>
+      <!--Col 2-->
+      <div class="col">
+        <img src="C:\Users\Chi Nguyen\Desktop\Web 2\images\image 7.png" width="330" height="480" style="padding-bottom: 15px">
+        <h3>Sunshine</h3>
+        <p>Portrait Shooting</p>
+      </div>
+      <!--Col 3-->
+      <div class="col">
+        <img src="C:\Users\Chi Nguyen\Desktop\Web 2\images\image 8.png" width="330" height="480" style="padding-bottom: 15px">
+        <h3>Memories</h3>
+        <p>Portrait Shooting</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br>
+<br>
+<section>
+  <div class="footer">
+    <div class="row">
+      <div class="col">
+        <br>
+        <div class="row2">
+          <img class="img0" src="C:\Users\Chi Nguyen\Desktop\Web 2\images\Logo-10.png" width="30%" height="auto">
+        </div>
+        <div class="row3">
+          <p>“Photography is a way of feeling of touching, of loving."</p>
+        </div>
+      </div>
+    <div class="col">
+      <div class="row1">
+        <br>
+        <p>Contact me</p>
+      </div>
+      <div class="row"> 
+       <a href="https://www.facebook.com/chiimintk/" class="fa fa-facebook"></a>
+       &ensp;
+       <a href="https://www.instagram.com/cinuen.uiuxdesign/" class="fa fa-instagram"></a>
+       &ensp;
+       <a href="https://www.pinterest.com/chinguyen1107/" class="fa fa-pinterest"></a>
+     </div>
+   </div>
+
+   <div class="col">
+     <form action="action_page.php">
+      <div class="row1">
+        <br>
+        <p>Subscribe to our Newsletter</p>
+      </div>
+      <div class="row">
+        <input type="text1" placeholder="Name" name="name" required>
+        &ensp;
+        <input type="text1" placeholder="Email address" name="mail" required>
+      </div>
+      <div class="row">
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        </label>
+      </div>
+      <div class="row">
+        <input type="submit1" value="Subscribe">
+      </div>
+    </form>
+    <br>
+  </div>
+</div>
+</div>
+</section>
